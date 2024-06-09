@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="destyle.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Brainf**k INTERPRETER</title>
+</head>
+<body>
+  <main class="main">
+    <header class="header">
+      <div class="header_title">
+        Brainf<span class="color_main">**</span>k INTERPRETER
+      </div>
+    </header>
+    <div class="container flex_row">
+      <div class="left_container flex_column">
+        <div class="container__code component__textarea">
+          <div class="title">CODE</div>
+          <div class="textarea">
+            <textarea name="" id=""></textarea>
+          </div>
+        </div>
+        <div class="container__control flex_row">
+          <div class="container__control_btns flex_row">
+            <button class="button__run component__control_btn">RUN</button>
+            <button class="button__clear component__control_btn">CLEAR</button>
+          </div>
+          <button class="button__ascii_code_table color_main">
+            → ASCII CODE TABLE
+          </button>
+        </div>
+        <div class="container__memo component__textarea">
+          <div class="title">MEMO</div>
+          <div class="textarea">
+            <textarea name="" id="" rows="8"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="right_container flex_column">
+        <div class="container__input component__textarea">
+          <div class="title">INPUT</div>
+          <div class="textarea">
+            <textarea name="" id="" rows="1"></textarea>
+          </div>
+        </div>
+        <div class="container__output component__textarea">
+          <div class="title">OUTPUT</div>
+          <div class="textarea">
+            <textarea name="" id="" rows="12" readonly></textarea>
+          </div>
+        </div>
+        <div class="container__memory flex_column">
+          <div class="title">MEMORY</div>
+          <div class="outer__memory_view">
+            <div class="container__memory_view">
+              <div class="inner__memory_view"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
